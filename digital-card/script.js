@@ -1,10 +1,4 @@
-const VIBES = [
-  "文學 · 北京話 · vibe coding",
-  "nanoparticles · formulation · curiosity",
-  "AI 工具應用 · 快速迭代 · 做出來",
-  "系學會學藝部 · 活動企劃 · 內容感",
-];
-
+const VIBES = ["curious · responsible · driven · husky · perspective · insightful"];
 const PALETTES = [
   { a: "#86f4d0", b: "#7c93ff", c: "#ff86d3", accent: "#86f4d0" },
   { a: "#ffd57a", b: "#7cffc2", c: "#a78bff", accent: "#7cffc2" },
