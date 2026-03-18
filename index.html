@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>方倚靈｜數位名片</title>
+    <meta
+      name="description"
+      content="方倚靈的極簡互動數位名片：藥學系、系學會學藝部、藥劑學科實驗室（nanoparticles）。"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Noto+Sans+TC:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <main class="stage">
+      <section class="card" aria-label="數位名片">
+        <header class="top">
+          <button class="avatar" type="button" id="vibeToggle" aria-label="切換 Vibe 模式">
+            <img src="./assets/avatar.png" alt="方倚靈的大頭照" />
+            <span class="ring" aria-hidden="true"></span>
+          </button>
+
+          <div class="headline">
+            <h1 class="name">方倚靈</h1>
+            <p class="status" id="statusLine">vibe coding · AI 工具應用</p>
+            <div class="chips" aria-label="快速標籤">
+              <button class="chip" type="button" id="chipVibe">Vibe</button>
+              <span class="dot" aria-hidden="true"></span>
+              <span class="chip ghost" id="localTime" aria-label="本地時間"></span>
+            </div>
+          </div>
+        </header>
+
+        <section class="about" aria-label="自我介紹">
+          <ul class="facts">
+            <li><span class="k">學系</span><span class="v">臺北醫學大學 藥學系</span></li>
+            <li><span class="k">社團</span><span class="v">系學會 學藝部</span></li>
+            <li>
+              <span class="k">實驗室</span>
+              <span class="v">藥劑學科實驗室（nanoparticles）</span>
+            </li>
+            <li><span class="k">興趣</span><span class="v">文學、北京話、vibe coding、AI 工具應用</span></li>
+          </ul>
+        </section>
+
+        <nav class="actions" aria-label="社群連結">
+          <a
+            class="btn ig"
+            href="https://www.instagram.com/tsai_ingwen/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="前往 Instagram"
+          >
+            <span class="btnLabel">Instagram</span>
+            <span class="btnHint">跳轉</span>
+          </a>
+
+          <a
+            class="btn gh"
+            href="https://github.com/Yiling64"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="前往 GitHub"
+          >
+            <span class="btnLabel">GitHub</span>
+            <span class="btnHint">跳轉</span>
+          </a>
+
+          <a
+            class="btn mail"
+            href="mailto:b313113090@tmu.edu.tw"
+            aria-label="寄信或複製 Email"
+            data-email="b313113090@tmu.edu.tw"
+            id="emailBtn"
+          >
+            <span class="btnLabel">Email</span>
+            <span class="btnHint">點擊複製</span>
+          </a>
+        </nav>
+
+        <footer class="foot">
+          <p class="fine">
+            Tip：點一下照片或 <span class="mono">Vibe</span>，切換配色與一句話。
+          </p>
+        </footer>
+
+        <div class="fx" id="fx" aria-hidden="true"></div>
+      </section>
+
+      <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+    </main>
+  </body>
+</html>
